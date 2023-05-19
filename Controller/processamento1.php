@@ -21,8 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'cartao' => $cadastro->get_num_card(),
         'senha' => $cadastro->get_password(),
         'telefone' => $cadastro->get_phone_num(),
-        'email' => $cadastro->get_email(),
-        'teste' => $cadastro->usuario->login
+        'email' => $cadastro->get_email()
     ]);
     
     // Redireciona o usuário para outra página
